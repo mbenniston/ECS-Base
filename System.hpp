@@ -11,7 +11,7 @@ namespace ECS
 
 	public:
 
-		//Adds the entity from the registry 
+		//Adds an entity to the registry 
 		virtual Comp* registerEntity(Entity* e) {
 			Comp* comp = &registry[e]; 
 			e->addComponent(comp);
